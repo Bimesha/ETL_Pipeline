@@ -25,7 +25,7 @@ def transform(**kwargs):
     # Cleaning and Transforming
     df.fillna(0, inplace=True)  # Fill missing values
     df['DATE_DIED'] = pd.to_datetime(df['DATE_DIED'], errors='coerce')
-    df['SEX'] = df['SEX'].astype(int, errors='ignore')
+    df['GENDER'] = df['GENDER'].astype(int, errors='ignore')
     
     # Log transformed data preview
     print("Transformed Data:")
